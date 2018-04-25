@@ -1,0 +1,122 @@
+/* 5. Site Navigation
+/* ---------------------------------------------------------- */
+
+.site-nav {
+    position: relative;
+    z-index: 1201;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: hidden;
+    font-size: 1.2rem;
+}
+
+.site-nav-left {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-right: 10px;
+    //padding-bottom: 80px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+
+    -ms-overflow-scrolling: touch;
+}
+
+/* Site Nav Hack Explanation (above):
+
+What's happening above it .site-nav-left is set to overflow-x and allow sideways scrolling, so that when there isn't enough space for all nav items (either due to lots of nav items, or a small viewport), you can still scroll side-to-side to reach them.
+
+The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px of padding-bottom and a 40px fixed height parent (.site-nav) hides that entirely. Slightly hacky code. But nice clean end-result.
+
+*/
+
+.site-nav-logo {
+    flex-shrink: 0;
+    display: block;
+    margin-right: 24px;
+    padding: 8px 0 0 0;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding-bottom: 8px;
+}
+
+.site-nav-logo:hover {
+    text-decoration: none;
+}
+
+// .site-nav-logo img {
+//     display: block;
+//     width: auto;
+//     height: 21px;
+// }
+
+////////////////////////////////////////////////////
+
+.site-nav-right {
+    // flex-shrink: 0;
+    // display: flex;
+    // align-items: center;
+}
+
+////////////////////////////////////////////////////////
+
+
+#masthead {
+    @include position(fixed, 0 null null 0);
+    padding: 10px 20px;
+     z-index: 1210;
+     width: 100%;
+    
+    
+      transform: translateY(-100%);
+  transition: all .2s ease-in-out;
+  
+  &.active-header {
+      transform: translateY(0);
+
+    }
+
+  &.dark {
+      background-color: $header-dark;
+  }
+
+  &.remove-dark {
+   background-color: $header-background;
+   transform: translateY(0);
+    }
+}
+
+.page-template #masthead {
+  background-color: $header-dark;
+}
+
+
+.site-nav-left {
+        transition: opacity .4s;
+      }
+
+.fixed-head {
+  @include position(fixed, 0 null null 0);
+  width: 100%;
+   z-index: 1210;
+}
+
+ @media (max-width: 700px) {
+    .site-header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .site-nav-left {
+        margin-right: 0;
+        padding-left: 4vw;
+    }
+   #masthead {
+    padding: 10px 5px;
+   }
+}

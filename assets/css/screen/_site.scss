@@ -1,0 +1,208 @@
+/* 1. Global - Set up the things
+/* ---------------------------------------------------------- */
+
+
+body {
+    background: #f4f8fb;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.img-framed {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 3px;
+    border: $border;
+    box-shadow: 2px 2px 2px $lightgrey; 
+}
+
+.img-circle {
+    border-radius: 50rem !important;
+}
+
+// =======================
+// Back to top
+// =======================
+
+.back-to-top {
+  display: inline-block;
+  margin-bottom: 10px;
+  //text-decoration: underline;
+  width: 40px;//50
+  height: 40px;//50
+  border-radius: 55%;
+
+
+background: $black;
+position: fixed;
+bottom: -150px;
+right: 18px;
+transition: bottom 1s;
+cursor: pointer;
+z-index: 1001;
+
+// &:hover {
+//   background: tint($main-color, 20%);
+// }
+
+}
+.back-to-top:before {
+  content: " ";
+  display: block;
+  width: 40%;
+  padding: 20% 0;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(225deg);
+  margin-left: 28%;
+  margin-top: 38%;
+  position: absolute;
+}
+
+// =======================
+// Loading bar
+// =======================
+
+
+#loader-wrapper {
+    @include position(fixed, 0 null null 0);
+    @include size(100%);
+    z-index: 2000;
+}
+
+#search-loader-wrap {
+    margin-top: $spacer;
+    z-index: 1000;
+}
+
+#loader {
+    @include size(100px);
+    @include margin(-50px 0 0 -50px);
+    border: 3px solid transparent;
+} 
+
+#search-loader {
+    @include size(60px);
+    @include margin(-30px 0 0 -30px);
+    border: 2px solid transparent;
+}
+
+#loader,
+#search-loader {
+    display: block;
+    @include position(relative, 50% null null 50%);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 2s linear infinite;
+    z-index: 1001;
+}
+
+ #loader:before {
+        border: 3px solid transparent;
+    }
+
+    #search-loader:before {
+    border: 2px solid transparent;
+    }
+
+    #loader:before,
+    #search-loader:before {
+        content: "";
+        @include position(absolute, 5px 5px 5px 5px);
+        border-radius: 50%;
+        border-top-color: #e74c3c;
+        animation: spin 3s linear infinite;
+    }
+ #loader:after {
+    border: 3px solid transparent;
+    }
+
+    #search-loader:after {
+       border: 2px solid transparent; 
+    }
+
+    #loader:after,
+    #search-loader:after {
+        content: "";
+        @include position(absolute, 15px 15px 15px 15px);
+        border-radius: 50%;
+        border-top-color: #f9c922;
+          animation: spin 1.5s linear infinite;
+    }
+
+
+    @-webkit-keyframes spin {
+        0%   { 
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        @include position(fixed, 0 null null null);
+        @include size(51%, 100%);
+        background: #222222;
+        z-index: 1000;
+        transform: translateX(0);
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+                transform: translateX(-100%);
+
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+                transform: translateX(100%); 
+ 
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0; 
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+                transform: translateY(-100%);
+         
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper,
+    .no-js #search-loader-wrap {
+        display: none;
+    }

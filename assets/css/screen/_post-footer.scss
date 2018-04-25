@@ -1,0 +1,199 @@
+/* 7.2. Post Footer
+/* ---------------------------------------------------------- */
+
+.post-full-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3vw 0 6vw 0;
+    max-width: 840px;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+}
+
+.author-card-name {
+    margin: 0 0 2px 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.author-card-name a {
+    color: $darkgrey;
+    font-weight: 700;
+}
+
+.author-card-content p {
+    margin: 0;
+    color: $midgrey;
+    line-height: 1.3em;
+}
+
+.post-full-footer-right {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.author-card-button {
+    display: block;
+    padding: 9px 16px;
+    border: tint($midgrey, 20%) 1px solid;
+    color: $midgrey;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+}
+
+.post-full-authors {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: tint($lightgrey, 10%) 1px solid;
+}
+
+.post-full-authors-content {
+    margin-bottom: 20px;
+}
+
+.post-full-authors-content p {
+    margin-bottom: 0;
+    color: $midgrey;
+    font-size: 1.4rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-full-authors-content a {
+    display: inline-block;
+    color: tint($darkgrey, 20%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post-full-footer .author-list-item {
+    width: 42px;
+}
+
+@media (max-width: 650px) {
+    .post-full-footer .author-list-item {
+        width: 54px;
+        height: 54px;
+    }
+}
+
+.post-full-footer .author-list-item > a {
+    position: absolute;
+    display: inline-block;
+    width: 48px;
+}
+
+.post-full-footer .author-profile-image,
+.post-full-footer .avatar-wrapper {
+    width: 48px;
+    height: 48px;
+}
+
+.author-card .author-profile-image,
+.author-card .avatar-wrapper {
+    margin-right: 15px;
+    position: relative;
+}
+
+.post-full-footer .avatar-wrapper svg {
+    width: 46px;
+    height: 46px;
+}
+
+.author-list-item .author-card {
+    position: absolute;
+    bottom: 12px;
+    left: calc(-160px + 28px);
+    z-index: 999;
+    display: block;
+    width: 320px;
+    font-size: 1.4rem;
+    letter-spacing: 0.2px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform: scale(0.98) translateY(10px);
+    pointer-events: none;
+}
+
+.author-list-item .author-card:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(160px - 20px + 6px);
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #fff;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.author-list-item .author-card.hovered {
+    opacity: 1.0;
+    transform: scale(1) translateY(0px);
+    pointer-events: auto;
+}
+
+.author-card .basic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+    color: #fff;
+    background: $darkgrey;
+    border-radius: 6px 6px 0 0;
+}
+
+.author-card .basic-info h2 {
+    margin: 1em 0 0.5em;
+}
+
+.author-card .bio {
+    padding: 20px 20px 0;
+}
+
+@media (max-width: 650px) {
+    .author-list-item .author-card {
+        display: none;
+    }
+}
+
+.basic-info .author-profile-image {
+    margin: 0;
+    width: 88px;
+    height: 88px;
+    border: none;
+}
+
+.basic-info .avatar-wrapper {
+    position: relative;
+    margin: 0;
+    width: 88px;
+    height: 88px;
+    border: none;
+    background: rgba(229, 239, 245, 0.1);
+}
+
+.basic-info .avatar-wrapper svg {
+    margin: 0;
+    width: 88px;
+    height: 88px;
+    opacity: 0.15;
+}

@@ -1,0 +1,67 @@
+// ==========================================================================
+//  Sitemap
+// ==========================================================================
+
+
+.sitemap-body {
+     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 40px 0 0 0;
+    
+    p {
+    line-height: 1.4;
+    //font-size: $font-size/1.1;
+    margin-bottom: $spacer;
+}
+}
+
+.sitemap-col {
+     flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    min-height: 300px;
+    text-align: center;
+    background: #fff center center;
+    //background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    transition: all 0.5s ease;
+    h3 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: $spacer/1.5 0 10px 0;
+    }
+    ul {
+        //padding: 0;
+        list-style-type: none;
+        //margin: 0;
+        li {
+            color: $black;
+            
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+           
+            
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .sitemap-body {
+        padding-top: 5vw;
+
+         p {
+
+    @include padding(null $spacer/2);
+}
+    }
+    .sitemap-col {
+        margin: 0 20px 5vw;
+    }
+}
+

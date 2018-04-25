@@ -1,0 +1,68 @@
+<!-- $page-title author Admin -->
+
+<!-- $seo-title This is the author page for Admin -->
+
+<!-- $page-description This is the author page that shows all author Admin posts. -->
+
+<!-- $keyword author, about -->
+<!-- $page-url author.html -->
+<!-- $page-author Admin -->
+<!-- $content-type Page -->
+<!-- $article-tag nil -->
+<!-- $post-image assets/images/author-title-image22.jpg -->
+<!-- $class author-template -->
+
+<!-- @import _default-header -->
+
+<header class="site-header outer" style="background-image: url(<!-- $post-image -->)">
+
+
+ <div id="masthead" class="active-header"> 
+     <div class="inner">       
+       
+       <!-- @import partials/_site-nav -->
+
+</div><!-- inner -->
+</div><!-- active-header -->
+      <!-- @import partials/_fullscreen-overlay -->
+     <div class="inner"> 
+        
+        <div class="site-header-content">
+            
+                <img class="author-profile-image" src="<!-- $author-image -->" alt="<!-- $author --> icon" />
+           
+            <h1 class="site-title"><!-- $author --></h1>
+            
+                <h2 class="author-bio"><!-- $author-bio --></h2>
+            
+             <div class="author-meta">
+                
+                    <div class="author-location"><!-- @import partials/icons/location-main.svg --><!-- $author-location --> <span class="bull">&bull;</span></div>
+                
+                <div class="author-stats"><!-- @import partials/icons/post-stats.svg -->
+                    <!-- $author-stats --> <span class="bull">&bull;</span>
+                </div>
+                
+                
+                <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" target="_blank" rel="noopener"><!-- @import partials/icons/_rss --></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+             <!-- @import partials/post-cards/_post-card-users -->
+            <!-- @import partials/post-cards/_post-card-tips -->
+            <!-- @import partials/post-cards/_post-card-private -->
+            <!-- @import partials/post-cards/_post-card-markdown -->
+        </div>
+
+    </div>
+</main>
+
+<!-- @import _default-footer -->

@@ -1,0 +1,100 @@
+// =======================
+// Search
+// =======================
+
+// Search menu
+
+  #search-menu{
+    padding: 30px 8%;
+    .search-inner{
+      position: relative;
+      padding: $spacer $spacer $spacer/2 $spacer;
+    }
+  }
+
+.searchform {
+            label{
+                //font-family: $heading-font;
+                font-size:2rem;
+                letter-spacing: 1px;
+                color: $off-white;
+                display: block;
+                width: 100%;
+            }
+            input[type="text"]{
+                font-size:70px;
+                color: $main-color;
+                display: block;
+                width: 100%;
+                background: transparent;
+                //font-family: $heading-font;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 4px solid $main-color;
+                box-shadow: none;
+                @include padding($spacer/5 null);
+                // @media (max-width: $screen-sm-max){
+                //  @include font-size(60px);
+                // }
+                // @media (max-width: $screen-xs-max){
+                //  @include font-size(40px);
+                // }
+                &:focus{
+                    outline: none;
+                }
+            }
+            input[type="submit"]{
+                display: none;
+            }
+        }
+
+        //Results Page
+#search-results {
+padding: 0 $spacer/1.5 $spacer/1.5 $spacer/1.5;
+h3 {
+    color: $white;
+    text-align: center;
+    font-size: $font-size;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+h2 {
+        margin-bottom: 5px;
+        font-size: $font-size;
+    }
+    p {
+        font-size: 1rem;
+        color: $white;
+        line-height: 1.4;
+        padding-bottom: $spacer/4;
+        border-bottom: solid 1px $midgrey;
+        .more-link {
+            font-size: .8rem;
+        }
+    }
+}
+
+// Search loader
+
+  .search-loader{
+    display: none;
+    
+    }
+
+
+  // Search Result
+
+  #search-results{
+    //display: none;
+  }
+
+  @media (max-width: 700px) {
+   #search-menu{
+    padding: 30px 0;
+
+    .search-inner {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+}
+}

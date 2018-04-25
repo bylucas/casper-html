@@ -1,0 +1,63 @@
+/* Media min-width 900px
+/* ------------------------------------------------------------
+*/
+
+
+@media (min-width: 900px) {
+
+//Table hovers
+.post-full-content table {
+
+tbody tr td,
+tbody tr th {
+  transition: background-color 1.0s ease-in-out;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+  background-color: tint($whitegrey, 6%);
+}
+}
+
+//Link hovers
+a:hover {
+    text-decoration: underline;
+}
+
+//post hovers
+.post-full-content a:hover {
+    color: $blue;
+    text-decoration: none;
+}
+
+.author-card-button:hover {
+    border-color: $blue;
+    color: $blue;
+    text-decoration: none;
+}
+
+.post-card:hover {
+    box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;
+    transition: all 0.4s ease;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
+.post-card-tags:hover,
+.post-card-title a:hover {
+    text-decoration: none;
+    color: $main-color;
+}
+
+.author-card-name a:hover {
+    text-decoration: none;
+}
+
+.read-next-card-header-title a:hover {
+    text-decoration: none;
+}
+
+.site-footer-content a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+}

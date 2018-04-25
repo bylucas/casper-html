@@ -1,0 +1,104 @@
+/* 7.1. Subscribe Form
+/* ---------------------------------------------------------- */
+
+.subscribe-form {
+    margin: 1.5em 0;
+    padding: 4vw 4vw 5vw 4vw;
+    border: tint($whitegrey, 2%) 1px solid;
+    text-align: center;
+    background: tint($whitegrey, 4%);
+    border-radius: 7px;
+}
+
+.subscribe-form-title {
+    margin: 0 0 3px 0;
+    padding: 0;
+    color: $darkgrey;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.subscribe-form p {
+    margin-bottom: 1em;
+    color: $midgrey;
+    font-size: 2.2rem;
+    line-height: 1.55em;
+    letter-spacing: 0.2px;
+}
+
+.subscribe-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 420px;
+}
+
+.subscribe-form .form-group {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.subscribe {
+    display: block;
+    padding: 15px 10px;
+    margin-top: $spacer/2;
+    width: 100%;
+    border: tint($lightgrey, 7%) 1px solid;
+    color: $midgrey;
+    font-size: 1.6rem;
+    line-height: 1em;
+    font-weight: normal;
+    user-select: text;
+    border-radius: 5px;
+    transition: border-color 0.15s linear;
+
+    -webkit-appearance: none;
+}
+
+.subscribe:focus {
+    outline: 0;
+    border-color: shade($lightgrey, 30%);
+}
+
+.subscribe-form textarea {
+    line-height: 1.4;
+    padding: 10px;
+}
+
+.subscribe-form button {
+    display: block;
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 0 20px;
+    height: 41px;
+    outline: none;
+    //color: red;
+    font-size: 1.5rem;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    background: linear-gradient(tint($blue, 7%), shade($blue, 7%),tint($blue, 10%));
+
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.subscribe-form button:active,
+.subscribe-form button:focus {
+    background: linear-gradient(tint($blue, 10%), shade($blue, 10%)),;
+}
+
+@media (max-width: 650px) {
+    .subscribe-form-title {
+        font-size: 2.4rem;
+    }
+    .subscribe-form p {
+        font-size: 1.6rem;
+    }
+}

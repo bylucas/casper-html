@@ -1,0 +1,572 @@
+/* 7. Single Post
+/* ---------------------------------------------------------- */
+
+.post-template .site-main,
+.page-template .site-main {
+    padding-bottom: 4vw;
+    background: #fff;
+}
+
+.page-template {
+    padding-top: $spacer;
+}
+
+.post-full {
+    position: relative;
+    z-index: 50;
+}
+/* ^ Required to make .post-full-content:before/after z-index stacking work */
+
+.post-full-header {
+    margin: 0 auto;
+    padding: 6vw 3vw 3vw;
+    max-width: 1040px;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .post-full-header {
+        padding: 14vw 3vw 10vw;
+    }
+}
+
+.post-full-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $midgrey;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post-full-meta-date {
+    color: $blue;
+}
+
+.post-full-title {
+    margin: 0;
+    color: shade($darkgrey, 5%);
+}
+
+.date-divider {
+    display: inline-block;
+    margin: 0 6px 1px;
+}
+
+.post-full-image {
+    margin: 0 -10vw -165px;
+    height: 800px;
+    background: $lightgrey center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 1170px) {
+    .post-full-image {
+        margin: 0 -4vw -100px;
+        height: 600px;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .post-full-image {
+        height: 400px;
+    }
+}
+
+.post-full-content {
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 100px 0;
+    min-height: 230px;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    line-height: 1.6em;
+    background: #fff;
+}
+
+.post-end {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    //background: $blue;
+
+    svg {
+    width: 50px;
+    fill: transparent;
+    stroke: $midgrey;
+
+    stroke-width: 0.7px;
+    stroke-opacity: 0.7;
+}
+}
+
+@media (max-width: 1170px) {
+    .post-full-content {
+        padding: 5vw 7vw 0;
+    }
+}
+@media (max-width: 800px) {
+    .post-full-content {
+        font-size: 1.9rem;
+    }
+}
+
+.post-full-content:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39,44,49,0.15);
+    filter: blur(5px);
+    transform: rotate(-5deg);
+}
+
+.post-full-content:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39,44,49,0.15);
+    filter: blur(5px);
+    transform: rotate(5deg);
+}
+
+.no-image .post-full-content {
+    padding-top: 0;
+}
+
+.no-image .post-full-content:before,
+.no-image .post-full-content:after {
+    display: none;
+}
+
+.kg-card-markdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 920px;
+}
+
+.post-full-content h1,
+.post-full-content h2,
+.post-full-content h3,
+.post-full-content h4,
+.post-full-content h5,
+.post-full-content h6,
+.post-full-content p,
+.post-full-content ul,
+.post-full-content ol,
+.post-full-content dl,
+.post-full-content pre,
+.post-full-content blockquote,
+.post-full-comments,
+.footnotes {
+    min-width: 100%;
+}
+
+.post-full-content li {
+    word-break: break-word;
+}
+
+.post-full-content li p {
+    margin: 0;
+}
+
+.post-template .kg-card-markdown > p:first-child {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.post-full-content a {
+    color: #000;
+    box-shadow: $blue 0 -1px 0 inset;
+}
+
+.post-full-content strong,
+.post-full-content em {
+    color: shade($darkgrey, 5%);
+}
+
+.post-full-content small {
+    display: inline-block;
+    line-height: 1.6em;
+}
+
+.post-full-content li:first-child {
+    margin-top: 0;
+}
+
+.post-full-content img,
+.post-full-content video {
+    display: block;
+    margin: 1.5em auto;
+    max-width: 1040px;
+}
+
+.post-full-content figure img,
+.post-full-content figure video {
+    display: block;
+    margin: 1.5em auto .2em auto;
+    max-width: 1040px;
+}
+
+.post-full-content figcaption {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    margin-bottom: 1em ;
+}
+
+@media (max-width: 1040px) {
+    .post-full-content img,
+    .post-full-content video {
+        width: 100%;
+    }
+}
+
+
+/* Full bleed images (#full)
+Super neat trick courtesy of @JoelDrapper
+
+Usage (In Ghost edtior):
+
+![img](/some/image.jpg#full)
+
+*/
+.post-full-content img[src$="#full"] {
+    max-width: none;
+    width: 100vw;
+}
+
+
+/* Image captions
+
+Usage (In Ghost editor):
+
+![img](/some/image.jpg)
+<small>Your image caption</small>
+
+*/
+.post-full-content img + br + small {
+    display: block;
+    margin-top: -3em;
+    margin-bottom: 1.5em;
+}
+
+
+.post-full-content iframe {
+    margin: 0 auto;
+}
+
+.post-full-content blockquote {
+    margin: 0 0 1.5em;
+    padding: 0 1.5em;
+    border-left: #3eb0ef 3px solid;
+}
+
+.post-full-content blockquote p {
+    margin: 0 0 1em 0;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-style: italic;
+}
+
+.post-full-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    padding: 0 5px 2px;
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 400!important;
+    background: $whitegrey;
+    border-radius: 3px;
+}
+
+pre {
+    overflow-x: auto;
+    margin: 1.5em 0 3em;
+    padding: 20px;
+    max-width: 100%;
+    border: shade($darkgrey, 10%) 1px solid;
+    color: $whitegrey;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    background: shade($darkgrey, 3%);
+    border-radius: 5px;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+}
+
+pre code * {
+    color: inherit;
+}
+
+.post-full-content .fluid-width-video-wrapper {
+    margin: 1.5em 0 3em;
+}
+
+.post-full-content hr {
+    margin: 4vw 0;
+}
+
+.post-full-content hr:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    display: block;
+    margin-left: -10px;
+    width: 1px;
+    height: 30px;
+    background: tint($lightgrey, 10%);
+    box-shadow: #fff 0 0 0 5px;
+    transform: rotate(45deg);
+}
+
+.post-full-content h1,
+.post-full-content h2,
+.post-full-content h3,
+.post-full-content h4,
+.post-full-content h5,
+.post-full-content h6 {
+    color: shade($darkgrey, 5%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.post-full-content h1 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 4.6rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    .post-full-content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+.post-full-content h2 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    .post-full-content h2 {
+        font-size: 2.6rem;
+    }
+}
+
+.post-full-content h3 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    .post-full-content h3 {
+        font-size: 2.2rem;
+    }
+}
+
+.post-full-content h4 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    .post-full-content h4 {
+        font-size: 2.2rem;
+    }
+}
+
+.post-full-content h5 {
+    display: block;
+    margin: 0.5em 0;
+    padding: 1em 0 1.5em;
+    border: 0;
+    color: $blue;
+    font-family: Georgia,serif;
+    font-size: 3.2rem;
+    line-height: 1.35em;
+    text-align: center;
+}
+@media (min-width: 1180px) {
+    .post-full-content h5 {
+        max-width: 1060px;
+        width: 100vw;
+    }
+}
+@media (max-width: 500px) {
+    .post-full-content h5 {
+        padding: 0 0 0.5em;
+        font-size: 2.2rem;
+    }
+}
+
+.post-full-content h6 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    .post-full-content h6 {
+        font-size: 2rem;
+    }
+}
+
+a.citation,
+a.footnote {
+    box-shadow: none;
+    font-size: 70%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  outline: none;
+}
+
+.footnotes-sep {
+    margin-bottom: 30px;
+}
+
+.footnotes {
+    font-size: 1.5rem;
+}
+
+.footnotes p {
+    margin: 0;
+}
+
+.footnotes a {
+    box-shadow: none;
+}
+
+.footnote-backref {
+    color: $blue !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* Some grouped styles for smaller viewports */
+@media (max-width: 500px) {
+    .post-full-meta {
+        font-size: 1.2rem;
+        line-height: 1.3em;
+    }
+    .post-full-title {
+        font-size: 2.9rem;
+    }
+    .post-full-image {
+        margin-bottom: 4vw;
+        height: 350px;
+    }
+    .post-full-content {
+        padding: 0;
+    }
+    .post-full-content:before,
+    .post-full-content:after {
+        display: none;
+    }
+}
+
+///TABLES/////////////
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: $spacer auto;
+  background-color: transparent;
+
+  th,
+  td {
+    padding: .7rem;
+    vertical-align: top;
+    border-top: $border;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $black;
+    text-align: left;
+}
+
+  th {
+    font-weight: bold;
+}
+
+  thead th {
+    vertical-align: bottom;
+}
+
+  tbody tr td,
+  tbody tr th {
+  //background transition see _900scss
+}
+
+  tbody tr:hover td,
+  tbody tr:hover th {
+  //background hover see _900scss
+}
+}
+
+table caption {
+  font-size: $font-size;
+  margin-top: $spacer/2;
+  margin-bottom: $spacer/2;
+}
+
+// CONDENSED ====================================================
+
+.table-condensed {
+  
+  th,
+  td {
+    padding: .2rem .25rem;
+}
+}
+
+// BORDERED ====================================================
+
+.table-bordered {
+  border: $border;
+  border-left: 0;
+  border-collapse: separate;
+
+  th,
+  td {
+    border-left: $border;
+}
+
+  thead:first-child tr:first-child th,
+  tbody:first-child tr:first-child th,
+  tbody:first-child tr:first-child td {
+    border-top: 0;
+}
+}
+
+// STRIPED ====================================================
+
+.table-striped {
+
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background: tint($lightgrey, 5%);
+}
+}

@@ -1,0 +1,100 @@
+/* Social Icons
+/* ---------------------------------------------------------- */
+
+
+.social-wrap {
+  width: 380px;
+border-top: 1px solid $midgrey;
+border-bottom: 1px solid $midgrey;
+@include margin($spacer/2 auto null auto);
+padding-top: $spacer/3;
+padding-bottom: $spacer/2;
+}
+
+.social-links {
+  
+  @include margin(null auto);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a:last-of-type {
+    padding-right: 20px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    opacity: 0.8;
+    //font-size: 2.5rem;
+}
+
+.social-link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.social-link svg {
+    height: 3.8rem;
+    width: 3.8rem;
+    fill: $whitegrey;
+}
+
+.social-link-fb svg {
+    height: 2.1rem;
+}
+
+.social-link-wb svg {
+    height: 1.6rem;
+}
+
+.social-link-wb svg path {
+    stroke: $white;
+}
+
+.social-link-rss svg {
+    height: 1.9rem;
+}
+
+.subscribe-button {
+  width: 25%;
+  @include margin(10px auto null auto);
+  text-align: center;
+    display: block;
+    padding: 4px 10px;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1em;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.subscribe-button:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.rss-button {
+    opacity: 0.8;
+}
+
+.rss-button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+   .social-wrap {
+  width: 300px;
+}
+
+.social-link {
+    padding: 10px 2px;
+}
+
+}
