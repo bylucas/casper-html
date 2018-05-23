@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitattributes",
+		"oF": 0
+		},
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -1179,7 +1186,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/author.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1189,7 +1196,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/basics.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1199,7 +1206,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/behance.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1207,9 +1214,9 @@
 	"\/partials\/icons\/blog.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/blog.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1219,7 +1226,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/chevron.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1229,7 +1236,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/close.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1237,9 +1244,9 @@
 	"\/partials\/icons\/comment-bubble.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/comment-bubble.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1247,9 +1254,9 @@
 	"\/partials\/icons\/comment-reply.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/comment-reply.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1257,9 +1264,9 @@
 	"\/partials\/icons\/contact2.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/contact2.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1267,9 +1274,9 @@
 	"\/partials\/icons\/download.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/download.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1279,7 +1286,17 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/facebook.svg",
-		"oF": 0,
+		"oF": 1,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/partials\/icons\/feedly.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/build\/partials\/icons\/feedly.svg",
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1289,7 +1306,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/github.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1299,7 +1316,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/googleplus.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1307,9 +1324,9 @@
 	"\/partials\/icons\/home-main.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/home-main.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1319,7 +1336,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/influences.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1329,7 +1346,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/interests.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1339,7 +1356,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/linkedin.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1349,7 +1366,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/location-main.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1357,19 +1374,19 @@
 	"\/partials\/icons\/location.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/location.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
 	"\/partials\/icons\/moreinfo.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/moreinfo.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1377,9 +1394,9 @@
 	"\/partials\/icons\/new-contact.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/new-contact.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1389,7 +1406,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/portfolio.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1399,7 +1416,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/post-stats.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1407,9 +1424,9 @@
 	"\/partials\/icons\/quotes-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/quotes-left.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1417,9 +1434,9 @@
 	"\/partials\/icons\/quotes-right.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/quotes-right.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1427,9 +1444,19 @@
 	"\/partials\/icons\/reply.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/reply.svg",
-		"oF": 0,
+		"oF": 1,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/partials\/icons\/rss-circle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/build\/partials\/icons\/rss-circle.svg",
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1437,9 +1464,9 @@
 	"\/partials\/icons\/star.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/star.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1447,9 +1474,9 @@
 	"\/partials\/icons\/themes.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/themes.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1457,9 +1484,9 @@
 	"\/partials\/icons\/top.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/top.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1467,9 +1494,9 @@
 	"\/partials\/icons\/tutorial.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/tutorial.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1479,7 +1506,7 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/twitter.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1487,9 +1514,9 @@
 	"\/partials\/icons\/wordpress.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/partials\/icons\/wordpress.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -1660,12 +1687,6 @@
 		"oAP": "\/build\/tag.html",
 		"oF": 0
 		},
-	"\/test": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/test",
-		"oF": 0
-		},
 	"\/tile-wide.png": {
 		"ft": 32768,
 		"iS": 41301,
@@ -1699,7 +1720,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 546298411
+	"lastBuiltDate": 546382817
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

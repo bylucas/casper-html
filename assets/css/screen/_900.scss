@@ -33,19 +33,30 @@ a:hover {
 .author-card-button:hover {
     border-color: $blue;
     color: $blue;
-    text-decoration: none;
+    
 }
 
 .post-card:hover {
+    text-decoration: none;
     box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
     transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
 .post-card-tags:hover,
 .post-card-title a:hover {
     text-decoration: none;
-    color: $main-color;
+    transition: all 0.7s ease;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+
+    &:after {
+  width: 100%;
+}
+}
+
+.author-card-name a:hover:after,
+.author-card-name a:focus:after {
+    width: 100%;
 }
 
 .author-card-name a:hover {

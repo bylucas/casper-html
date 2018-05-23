@@ -33,11 +33,21 @@
 }
 
 .site-header-content .author-location svg,
-.site-header-content .author-stats svg {
+.site-header-content .author-stats svg,
+.site-header-content .author-feed svg {
     height: 1.7rem;
     width: 1.7rem;
     fill: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    opacity: .7;
+}
+
+.site-header-content .author-feed svg {
+   height: 2rem;
+   width: 2rem;
+    &:hover {
+    opacity: 1;
+}
 }
 
 .site-header-content .bull {
@@ -58,6 +68,6 @@
     }
     .author-location,
     .author-stats {
-        display: none;
+        //display: none;
     }
 }

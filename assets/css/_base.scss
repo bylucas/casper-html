@@ -146,6 +146,7 @@ blockquote cite a {
 }
 
 a {
+    transition: color 0.3s ease-in 0.1s;
     color: shade($blue, 5%);
     text-decoration: none;
 }

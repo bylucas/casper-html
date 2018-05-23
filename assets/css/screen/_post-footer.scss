@@ -24,6 +24,17 @@
 .author-card-name a {
     color: $darkgrey;
     font-weight: 700;
+     letter-spacing: 0.5px;
+  display: inline-block;
+   &:after {
+display: block;
+content: "";
+width: 24px;
+height: 2px;
+margin: 4px 0 10px;
+background: $blue;
+transition: width .8s ease-in-out;
+  }
 }
 
 .author-card-content p {

@@ -119,10 +119,17 @@
 
 .floating-header-share-tw {
     background: #33b1ff;
+    &:hover {
+        background: #55acee;
+    }
 }
 
 .floating-header-share-fb {
     background: #005e99;
+
+&:hover {
+        background: #3b5998;
+    }
 }
 
 .progress {

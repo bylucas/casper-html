@@ -46,7 +46,7 @@
 }
 
 .post-card-tags {
-    display: block;
+    display: inline-block;
     margin-bottom: 4px;
     color: $midgrey;
     font-size: 1.2rem;
@@ -54,15 +54,45 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+
+     &::after {
+        display: block;
+content: "";
+width: 18px;
+height: 1px;
+margin: 4px 0 5px;
+background: $blue;
+transition: width 1s;
+}
+}
+
+.post-card-spacer {
+    width: 100%;
 }
 
 .post-card-title {
-    margin-top: 0;
+    margin: 0;
+    //display:inline-block;
     a {
      color: $darkgrey;
-     letter-spacing: 0.5px;   
-    }
+     letter-spacing: 0.5px;
+     margin-bottom: 4px;
+    line-height: 1.1;
+  display: inline-block;
+     
+     &:after {
+display: block;
+content: "";
+width: 24px;
+height: 2px;
+margin: 4px 0 10px;
+background: $blue;
+transition: width .8s ease-in-out;
+  }
 }
+} 
+
+
 
 .post-card-content {
     flex-grow: 1;
