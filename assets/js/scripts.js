@@ -8,7 +8,7 @@ $offcanvasMenu     = $('#offcanvas-menu'),
 $searchToggle      = $('.search-toggle'),
 $searchMenu        = $('#search-menu'),
 $searchInner       = $('#search-menu .search-inner'),
-$searchResults     = $('#search-results'),
+$searchResults     = $('#livesearch'),
 $searchForm        = $('#searchform'),
 $searchFormInput   = $('#searchform #s'),
  lastScrollTop     = 0,
@@ -109,37 +109,49 @@ $offcanvasToggle.click( function(e) {
 
   var searchLoader = '<div id="search-loader-wrap"><div id="search-loader"></div></div>';
 
-         function fetch() {
 
-            $.ajax({
-              url: myAjax.ajaxurl,
-              type: 'POST',
-              dataType: 'html',
-              data: {
-              action: '',
-              s: jQuery('#s').val()
-              },
+   function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","helpers/livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+
+         //function fetch() {
 
               
-              success: function (data) {
+          //     success: function (data) {
                   
-                if (data === '' || !$.trim($searchFormInput.val()).length){
-                  $searchResults.empty();
-                  $searchResults.fadeOut('fast');
-                } else {
-                  $searchResults.empty().append(data).fadeIn('slow');
-                }
+          //       if (data === '' || !$.trim($searchFormInput.val()).length){
+          //         $searchResults.empty();
+          //         $searchResults.fadeOut('fast');
+          //       } else {
+          //         $searchResults.empty().append(data).fadeIn('slow');
+          //       }
 
-              },
-              complete: function(){
-                searchQueryFinish();
-              },
-              //error: function (errorThrown) {
-                  
-              //}
-            });
+          //     },
+          //     complete: function(){
+          //       searchQueryFinish();
+          //     },
+             
+          //   };
 
-          }
+          // }
 
           var typingTimer; // timer object
           var doneTypingInterval = 800; // timer interval
@@ -152,8 +164,10 @@ $offcanvasToggle.click( function(e) {
           // Detect user input on the search field
           $searchFormInput.on('input',function(){
             clearTimeout(typingTimer); // clear timeout
-            typingTimer = setTimeout(passSearchQuery, doneTypingInterval); // add timeout of interval to run query function
+            typingTimer = setTimeout( passSearchQuery, doneTypingInterval); // add timeout of interval to run query function
           });
+
+         
 
           // Pass search query to AJAX
           function passSearchQuery(){

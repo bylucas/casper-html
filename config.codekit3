@@ -440,6 +440,37 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/helpers\/_form.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/assets\/helpers\/_form.html",
+		"oF": 0
+		},
+	"\/assets\/helpers\/links.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/assets\/helpers\/links.xml",
+		"oF": 0
+		},
+	"\/assets\/helpers\/livesearch.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/assets\/helpers\/livesearch.php",
+		"oF": 0
+		},
+	"\/assets\/helpers\/search-function.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/helpers\/search-function-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/images\/404.jpg": {
 		"ft": 16384,
 		"iS": 21234,
@@ -797,7 +828,7 @@
 	"\/assets\/js\/scripts.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/js\/scripts-min.js",
 		"oF": 0,
