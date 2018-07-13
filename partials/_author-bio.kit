@@ -1,17 +1,55 @@
-<footer class="post-full-footer">
-    <section class="author-card">
-                       <img class="author-profile-image" src="<!-- $author-image -->" alt="<!-- $author --> image" />
-                        
-                        <section class="author-card-content">
-                            <h4 class="author-card-name"><a href="<!-- $author-url -->"><!-- $author --></a></h4>
-                            
-                                <p><!-- $author-bio --></p>
-                            
-                        </section>
-                    </section>
-				 <div class="post-full-footer-right">
-                        <a class="author-card-button" href="<!-- $author-url -->">Read More</a>
-                    </div>
-                    
 
-            </footer>
+
+ <footer class="post-full-footer">
+
+
+                    <section class="post-full-authors">
+
+                        <div class="post-full-authors-content">
+                            <p>Post by <!-- $author --></p>
+                        </div>
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <div class="basic-info">
+                                        
+                                            <img class="author-profile-image" src="<!-- $author-image -->" alt="<!-- $author --> avatar" />
+                                        
+                                            <!-- <span class="avatar-wrapper">{{> "icons/avatar"}}</span> -->
+                                        
+                                        <h2><!-- $author --></h2>
+                                    </div>
+                                    <div class="bio">
+<p><!-- $author-bio --></p>
+                                         <p class="author-social">
+                                <a class="social-link" href="<!-- $linkedin -->" target="_blank" rel="noopener"><!-- @import icons/linkedin.svg --></a>
+
+                    <a class="social-link" href="<!-- $googleplus -->" target="_blank" rel="noopener"><!-- @import icons/googleplus.svg --></a>
+
+                     <a class="social-link" href="<!-- $behance -->" target="_blank" rel="noopener"><!-- @import icons/behance.svg --></a>
+
+                   <a class="social-link" href="<!-- $github -->" target="_blank" rel="noopener"><!-- @import icons/github.svg --></a>
+               </p>
+                                        
+                                            
+                                            <p><a href="<!-- $author-url -->">More posts</a> by <!-- $author -->.</p>
+                                        
+                                            <!-- <p>Read <a href="{{url}}">more posts</a> by this author.</p> -->
+                                        
+                                    </div>
+                                </div>
+
+                               
+                                    <a href="<!-- $author-url -->" class="moving-avatar"><img class="author-profile-image" src="<!-- $author-image -->" alt="<!-- $author -->" /></a>
+                                
+                                   <!--  <a href="{{url}}" class="moving-avatar"><span class="avatar-wrapper"></span></a> -->
+                                
+
+                            </li>
+                             </ul>
+                             </section>
+
+    </footer>
+           

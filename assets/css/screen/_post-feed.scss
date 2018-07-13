@@ -54,16 +54,8 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    opacity: .7;
 
-     &::after {
-        display: block;
-content: "";
-width: 18px;
-height: 1px;
-margin: 4px 0 5px;
-background: $blue;
-transition: width 1s;
-}
 }
 
 .post-card-spacer {
@@ -79,16 +71,8 @@ transition: width 1s;
      margin-bottom: 4px;
     line-height: 1.1;
   display: inline-block;
+  opacity: .7;
      
-     &:after {
-display: block;
-content: "";
-width: 24px;
-height: 2px;
-margin: 4px 0 10px;
-background: $blue;
-transition: width .8s ease-in-out;
-  }
 }
 } 
 
@@ -143,6 +127,10 @@ transition: width .8s ease-in-out;
     border-radius: 100%;
 
     object-fit: cover;
+}
+
+.post-card-meta img {
+opacity: .8;
 }
 
 .post-card-meta .profile-image-wrapper,
@@ -248,12 +236,18 @@ transition: width .8s ease-in-out;
     }
 }
 
-.reading-time {
+.reading-time,
+.author-reading-time {
     color: $midgrey;
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+}
+
+.author-reading-time {
+    width: 100%;
+    text-align: center;
 }
 
 /* Special Styling for home page grid (below):

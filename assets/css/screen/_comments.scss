@@ -4,4 +4,12 @@
 .post-full-comments {
     margin: 0 auto;
     max-width: 840px;
+    padding: 0 6rem;
+}
+
+@media (max-width: 600px) {
+.post-full-comments {
+    padding: 0 1rem;
+}
+
 }

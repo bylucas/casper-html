@@ -440,37 +440,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/assets\/helpers\/_form.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/assets\/helpers\/_form.html",
-		"oF": 0
-		},
-	"\/assets\/helpers\/links.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/helpers\/links.xml",
-		"oF": 0
-		},
-	"\/assets\/helpers\/livesearch.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/helpers\/livesearch.php",
-		"oF": 0
-		},
-	"\/assets\/helpers\/search-function.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/assets\/helpers\/search-function-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/assets\/images\/404.jpg": {
 		"ft": 16384,
 		"iS": 21234,
@@ -610,27 +579,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/images\/ghost-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/ghost-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/images\/header-image.jpg": {
-		"ft": 16384,
-		"iS": 104021,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/header-image.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/assets\/images\/ian-swift.jpg": {
 		"ft": 16384,
 		"iS": 199571,
@@ -708,28 +656,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/images\/stepping-into-wordpress-popart.jpg": {
-		"ft": 16384,
-		"iS": 102606,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/stepping-into-wordpress-popart.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/images\/stepping-into-wordpress.jpg": {
-		"ft": 16384,
-		"iS": 71096,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/stepping-into-wordpress.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/assets\/images\/taj-mahal.jpg": {
 		"ft": 16384,
 		"iS": 137651,
@@ -769,17 +695,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/toulouse-lautrec.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/images\/wordpress-category.jpg": {
-		"ft": 16384,
-		"iS": 83222,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/wordpress-category.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -842,13 +757,6 @@
 		"oAP": "\/build\/author.html",
 		"oF": 0
 		},
-	"\/author2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/author2.html",
-		"oF": 0
-		},
 	"\/basics-tag.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -890,25 +798,11 @@
 		"oAP": "\/build\/page.html",
 		"oF": 2
 		},
-	"\/full-pages\/setting-theme.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/setting-theme.html",
-		"oF": 2
-		},
 	"\/full-pages\/sitemap.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/sitemap.html",
-		"oF": 2
-		},
-	"\/full-posts\/editor.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/editor.html",
 		"oF": 2
 		},
 	"\/full-posts\/markdown-post.kit": {
@@ -918,46 +812,11 @@
 		"oAP": "\/build\/markdown-post.html",
 		"oF": 2
 		},
-	"\/full-posts\/organising.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/organising.html",
-		"oF": 2
-		},
 	"\/full-posts\/post.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/post.html",
-		"oF": 2
-		},
-	"\/full-posts\/private.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/private.html",
-		"oF": 2
-		},
-	"\/full-posts\/tables.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/tables.html",
-		"oF": 2
-		},
-	"\/full-posts\/tips.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/tips.html",
-		"oF": 2
-		},
-	"\/full-posts\/users.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/users.html",
 		"oF": 2
 		},
 	"\/full-posts\/welcome.kit": {
@@ -966,13 +825,6 @@
 		"oA": 0,
 		"oAP": "\/build\/welcome.html",
 		"oF": 2
-		},
-	"\/getting-started-tag.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/getting-started-tag.html",
-		"oF": 0
 		},
 	"\/index.kit": {
 		"cB": 0,
@@ -993,13 +845,6 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/pages\/_default-page.html",
-		"oF": 0
-		},
-	"\/pages\/_setting-up-your-theme-page.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/pages\/_setting-up-your-theme-page.html",
 		"oF": 0
 		},
 	"\/pages\/_sitemap-page.kit": {
@@ -1023,25 +868,11 @@
 		"oAP": "\/build\/partials\/_author-bio.html",
 		"oF": 0
 		},
-	"\/partials\/_author-bio2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/_author-bio2.html",
-		"oF": 0
-		},
 	"\/partials\/_author-portfolio.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/partials\/_author-portfolio.html",
-		"oF": 0
-		},
-	"\/partials\/_author2-bio.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/_author2-bio.html",
 		"oF": 0
 		},
 	"\/partials\/_comments.kit": {
@@ -1552,53 +1383,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/partials\/post-cards\/_post-card-editor.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-editor.html",
-		"oF": 0
-		},
 	"\/partials\/post-cards\/_post-card-markdown.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/partials\/post-cards\/_post-card-markdown.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-organising.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-organising.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-private.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-private.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-tables.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-tables.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-tips.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-tips.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-users.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-users.html",
 		"oF": 0
 		},
 	"\/partials\/post-cards\/_post-card-welcome.kit": {
@@ -1615,11 +1404,18 @@
 		"oAP": "\/build\/partials\/post-cards\/_post-card.html",
 		"oF": 0
 		},
-	"\/posts\/_advanced-markdown-tips.kit": {
+	"\/partials\/post-cards\/author-post-cards\/_author-post-card.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/build\/posts\/_advanced-markdown-tips.html",
+		"oAP": "\/build\/partials\/post-cards\/author-post-cards\/_author-post-card.html",
+		"oF": 0
+		},
+	"\/partials\/post-cards\/tag-post-cards\/_tag-post-card.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/partials\/post-cards\/tag-post-cards\/_tag-post-card.html",
 		"oF": 0
 		},
 	"\/posts\/_default-post.kit": {
@@ -1629,46 +1425,11 @@
 		"oAP": "\/build\/posts\/_default-post.html",
 		"oF": 0
 		},
-	"\/posts\/_making-your-site-private.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_making-your-site-private.html",
-		"oF": 0
-		},
-	"\/posts\/_managing-ghost-users.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_managing-ghost-users.html",
-		"oF": 0
-		},
 	"\/posts\/_markdown.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/posts\/_markdown.html",
-		"oF": 0
-		},
-	"\/posts\/_organising-your-content-with-tags.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_organising-your-content-with-tags.html",
-		"oF": 0
-		},
-	"\/posts\/_table-classes.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_table-classes.html",
-		"oF": 0
-		},
-	"\/posts\/_using-the-ghost-editor.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_using-the-ghost-editor.html",
 		"oF": 0
 		},
 	"\/posts\/_welcome-to-ghost.kit": {

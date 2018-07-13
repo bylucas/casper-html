@@ -34,10 +34,7 @@ padding-bottom: $spacer/2;
     //font-size: 2.5rem;
 }
 
-.social-link:hover {
-    opacity: 1;
-    text-decoration: none;
-}
+//social buttons post-footer author bio
 
 .social-link svg {
     height: 3.8rem;
@@ -59,6 +56,19 @@ padding-bottom: $spacer/2;
 
 .social-link-rss svg {
     height: 1.9rem;
+}
+
+.author-social {
+text-align: center;
+   a {
+    display: inline;
+   }
+
+   .social-link svg {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: $midgrey;
+}
 }
 
 .subscribe-button {

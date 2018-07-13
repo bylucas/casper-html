@@ -48,19 +48,18 @@ a:hover {
     text-decoration: none;
     transition: all 0.7s ease;
     transform: translate3D(0, -1px, 0) scale(1.02);
+    opacity: 1;
 
-    &:after {
-  width: 100%;
-}
-}
-
-.author-card-name a:hover:after,
-.author-card-name a:focus:after {
-    width: 100%;
 }
 
 .author-card-name a:hover {
     text-decoration: none;
+}
+
+.post-card-meta img:hover {
+    transition: all 0.7s ease;
+    transform: translate3D(0, 0, 0) scale(1.10);
+opacity: 1;
 }
 
 .read-next-card-header-title a:hover {
@@ -70,5 +69,16 @@ a:hover {
 .site-footer-content a:hover {
     color: rgba(255,255,255,1);
     text-decoration: none;
+}
+
+//social hovers
+.social-link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+//small top lefthand site name
+.site-nav-logo:hover {
+    opacity: 1;
 }
 }
