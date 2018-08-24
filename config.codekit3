@@ -757,13 +757,6 @@
 		"oAP": "\/build\/author.html",
 		"oF": 0
 		},
-	"\/basics-tag.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/basics-tag.html",
-		"oF": 0
-		},
 	"\/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -791,41 +784,6 @@
 		"oAP": "\/build\/favicon.ico",
 		"oF": 0
 		},
-	"\/full-pages\/page.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/page.html",
-		"oF": 2
-		},
-	"\/full-pages\/sitemap.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/sitemap.html",
-		"oF": 2
-		},
-	"\/full-posts\/markdown-post.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/markdown-post.html",
-		"oF": 2
-		},
-	"\/full-posts\/post.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/post.html",
-		"oF": 2
-		},
-	"\/full-posts\/welcome.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/welcome.html",
-		"oF": 2
-		},
 	"\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -840,19 +798,33 @@
 		"oAP": "\/build\/LICENSE",
 		"oF": 1
 		},
-	"\/pages\/_default-page.kit": {
+	"\/page-partials\/_default-page.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/build\/pages\/_default-page.html",
+		"oAP": "\/build\/page-partials\/_default-page.html",
 		"oF": 0
 		},
-	"\/pages\/_sitemap-page.kit": {
+	"\/page-partials\/_sitemap-page.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/build\/pages\/_sitemap-page.html",
+		"oAP": "\/build\/page-partials\/_sitemap-page.html",
 		"oF": 0
+		},
+	"\/pages\/page.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/page.html",
+		"oF": 2
+		},
+	"\/pages\/sitemap.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/sitemap.html",
+		"oF": 2
 		},
 	"\/partials\/_aside.kit": {
 		"cB": 0,
@@ -1383,19 +1355,12 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/partials\/post-cards\/_post-card-markdown.kit": {
+	"\/partials\/mailer.php": {
 		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-markdown.html",
-		"oF": 0
-		},
-	"\/partials\/post-cards\/_post-card-welcome.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/post-cards\/_post-card-welcome.html",
-		"oF": 0
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/mailer.php",
+		"oF": 3
 		},
 	"\/partials\/post-cards\/_post-card.kit": {
 		"cB": 0,
@@ -1418,26 +1383,19 @@
 		"oAP": "\/build\/partials\/post-cards\/tag-post-cards\/_tag-post-card.html",
 		"oF": 0
 		},
-	"\/posts\/_default-post.kit": {
+	"\/post-partials\/_default-post.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/build\/posts\/_default-post.html",
+		"oAP": "\/build\/post-partials\/_default-post.html",
 		"oF": 0
 		},
-	"\/posts\/_markdown.kit": {
+	"\/posts\/post.kit": {
 		"cB": 0,
 		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_markdown.html",
-		"oF": 0
-		},
-	"\/posts\/_welcome-to-ghost.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/posts\/_welcome-to-ghost.html",
-		"oF": 0
+		"oA": 0,
+		"oAP": "\/build\/post.html",
+		"oF": 2
 		},
 	"\/README.md": {
 		"cB": 0,
@@ -1512,7 +1470,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 546382817
+	"lastBuiltDate": 554037149
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

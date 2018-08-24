@@ -40,6 +40,10 @@
     font-weight: 400;
 }
 
+.error-inner {
+    height: $spacer*2;
+}
+
 @media (max-width: 800px) {
 
     .error-message {
@@ -79,6 +83,10 @@
 }
 .error-description {
     width: 85%;
+}
+
+.error-inner {
+    height: $spacer;
 }
 
 }
