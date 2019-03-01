@@ -4,15 +4,13 @@ Take a look at the latest default theme for [Ghost](http://github.com/tryghost/g
 
 ___
 
-![](https://howardlucas.io/post-images/wp-casper/wp-casper-header.jpg)
+![](wp-casper-header.jpg)
 
 ____
 
-# Introduce theme?
+This theme is an _html_ version of __Casper__ theme ready to be turned into a WordPress theme __wp-Casper__.
 
-This theme is an _html_ version of __Casper__ theme ready to be turned into a WordPress theme __wp-Casper__. At the moment this is a private theme for [howardlucas.io](https://howardlucas.io/), but hopefully will be a general WordPress theme in the near future. [howardlucas.io](https://howardlucas.io/) will run off a child theme of wp-Casper.
-
-> A preview of the Casper html theme can be seen [here](https://howardlucas.io/themes/casper-html/)
+> A preview of the Casper html theme can be seen [here](https://how59.com/themes/casper-html/)
 
 # Classes
 
@@ -60,4 +58,4 @@ Look into class `no-image` in the headers - no-image removes the featured image 
 
 # Copyright & License
 
-Copyright (c) 2009-2018 howardlucas.io - Released under the [MIT license](LICENSE).
+Copyright (c) 2009-2018 how59.com - Released under the [MIT license](LICENSE).
