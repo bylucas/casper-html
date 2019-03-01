@@ -4,7 +4,7 @@ Take a look at the latest default theme for [Ghost](http://github.com/tryghost/g
 
 ___
 
-![](wp-casper-header.jpg)
+![](tile-wide.png)
 
 ____
 
